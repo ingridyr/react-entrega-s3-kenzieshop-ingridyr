@@ -1,48 +1,58 @@
 header {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-around;
 }
 
-form{
-    margin: auto;
-    padding-bottom: 10px;
+form {
+  margin: auto;
+  padding-bottom: 10px;
 }
-
 
 nav {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    align-items: center;
-    margin: 0 20px;
-    height: 50px;
-    gap: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+  align-items: center;
+  margin: 0 20px;
+  height: 40px;
 }
 
-.cartBox{
-    display: flex;
-    gap: 30px;
+.cartButton {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 input {
-    max-width: 400px;
+  max-width: 400px;
+  flex-grow: 3;
 }
 
 .buttonLogin {
-    width: 80px;
+  width: 80px;
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  margin: 10px;
+  background-color: blueviolet;
+  color: white;
 }
 
 .logo {
-    display: flex;
-    flex-grow: 3;
+  display: flex;
+  flex-grow: 1;
 }
 
-.toggleBox{
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    background-color: white;
-    border: 2px solid black;
-    width: 200px;
-    transform: translate(-140px);
+.cartBox {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 350px;
+  transform: translate(-70%, 50%);
 }

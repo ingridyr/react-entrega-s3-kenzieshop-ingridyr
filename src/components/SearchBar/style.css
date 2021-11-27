@@ -1,0 +1,8 @@
+.searchBarContainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.showFilterList{
+    margin: 5px;
+}

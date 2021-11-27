@@ -1,16 +1,9 @@
-import { productsList } from "../../../ProductsList/productsList";
-import { SHOW_PRODUCTS } from "./actionTypes";
+import { productsInfo } from "../../../ProductsInfo/productsInfo";
 
-const initialState = productsList;
+const initialState = productsInfo;
 
 const productsReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case SHOW_PRODUCTS:
-      return action;
-
-    default:
-      return state;
-  }
+  return state
 };
 
 export default productsReducer;

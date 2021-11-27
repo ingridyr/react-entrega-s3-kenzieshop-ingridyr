@@ -1,24 +1,23 @@
-import ShowCase from "./components/ShowCase";
+import ProductList from "./components/ProductList";
 import Header from "./components/Header";
+import SearchBar from "./components/SearchBar";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
+      <SearchBar />
       <div className="mainContainer">
-        <aside>
-          <ul>pesquisa por filtro</ul>
-            <li>Gatos</li>
-            <li>Cães</li>
-            <li>Peixes</li>
-            <li>Hamsters</li>
-        </aside>
-        <ShowCase />
+        <ProductList />
       </div>
-    </div>
+    </>
   );
 }
 
 export default App;
+
+// => header contem: logo, botão do carrinho e botão de login
+// => searchBar contem: barra de pesquisa e filtragem de itens
+// => productList contem: componente de listagem dos itens da vitrine

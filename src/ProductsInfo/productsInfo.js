@@ -1,16 +1,15 @@
-import imagem1 from "../assets/img/racao-golden-caes.jpg"
-import imagem2 from "../assets/img/racao-golden-gatos.jpg"
-import imagem3 from "../assets/img/racao-nutropica-hamster.jpg"
-import imagem4 from "../assets/img/petisco-whiskas.jpg"
-import imagem5 from "../assets/img/racao-peixe.jpg"
-import imagem6 from "../assets/img/anti-algas.jpg"
-import imagem7 from "../assets/img/areia-para-gatos.jpg"
-import imagem8 from "../assets/img/casa-hamster.jpg"
+import imagem1 from "../assets/img/racao-golden-caes.jpg";
+import imagem2 from "../assets/img/racao-golden-gatos.jpg";
+import imagem3 from "../assets/img/racao-nutropica-hamster.jpg";
+import imagem4 from "../assets/img/petisco-whiskas.jpg";
+import imagem5 from "../assets/img/racao-peixe.jpg";
+import imagem6 from "../assets/img/anti-algas.jpg";
+import imagem7 from "../assets/img/areia-para-gatos.jpg";
+import imagem8 from "../assets/img/casa-hamster.jpg";
 
-
-
-export const productsList = [
+export const productsInfo = [
   {
+    id: 1,
     name: "Ração Golden Cães - 15kg",
     price: 159.99,
     description:
@@ -18,6 +17,7 @@ export const productsList = [
     image: imagem1,
   },
   {
+    id: 2,
     name: "Ração Golden Gatos - 3kg",
     price: 59.99,
     description:
@@ -25,6 +25,7 @@ export const productsList = [
     image: imagem2,
   },
   {
+    id: 3,
     name: "Ração Nutrópica Hamster - 5kg",
     price: 26.99,
     description:
@@ -32,6 +33,7 @@ export const productsList = [
     image: imagem3,
   },
   {
+    id: 4,
     name: "Petisco Whiskas - 40g",
     price: 9.99,
     description:
@@ -39,6 +41,7 @@ export const productsList = [
     image: imagem4,
   },
   {
+    id: 5,
     name: "Ração Nutricon Goldfish Peixe - 20g",
     price: 4.99,
     description:
@@ -46,6 +49,7 @@ export const productsList = [
     image: imagem5,
   },
   {
+    id: 6,
     name: "Anti-algas para aquários- 15ml",
     price: 13.99,
     description:
@@ -53,6 +57,7 @@ export const productsList = [
     image: imagem6,
   },
   {
+    id: 7,
     name: "Granulado Higiênico - 3kg",
     price: 34.99,
     description:
@@ -60,6 +65,7 @@ export const productsList = [
     image: imagem7,
   },
   {
+    id: 8,
     name: "Casa Ferplast Para Hamsters",
     price: 47.99,
     description:

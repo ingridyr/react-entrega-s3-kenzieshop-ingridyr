@@ -1,0 +1,30 @@
+.cartItems {
+  display: flex;
+}
+
+.cartItems img {
+  width: 100px;
+  height: 100px;
+}
+
+.cartItems .cardBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 120px;
+  width: 100%;
+  padding: 10px;
+  gap: 5px;
+}
+
+.cartItems p {
+  width: 100px;
+}
+
+.cartItems .qtd {
+  display: none;
+}
+
+.cartItems .price{
+  display: inline;
+}

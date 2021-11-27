@@ -1,21 +1,30 @@
-import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../store/modules/cart/actions";
+import { removeFromCart } from "../../store/modules/cart/actions";
 
 import "./style.css";
 
-const ProductCards = () => {
-  const products = useSelector((store) => store.products);
+const ProductCards = ({ product, removeItem = false, index }) => {
+  const { id, name, image, price } = product;
+
+  const dispatch = useDispatch();
 
   return (
-    <>
-      {products.map((item, index) => (
-        <div key={index} className="cardBox">
-          <img src={item.image} alt={`imagem ${index + 1}`} />
-          <p>{item.name}</p>
-          <p>R$ {item.price}</p>
-          <button>add to cart</button>
-        </div>
-      ))}
-    </>
+    <div key={id} className="cardBox">
+      <img src={image} alt={`img${id}`} />
+      <div>
+        <p className="title">{name}</p>
+        <p className="price">R$ {price}</p>
+        {/* <p className="qtd">qtd</p> tentar implementar quantidade*/}
+      </div>
+      {removeItem ? (
+        <button onClick={() => dispatch(removeFromCart(index))}>X</button>
+      ) : (
+        <button onClick={() => dispatch(addToCart(product))}>
+          add to cart
+        </button>
+      )}
+    </div>
   );
 };
 

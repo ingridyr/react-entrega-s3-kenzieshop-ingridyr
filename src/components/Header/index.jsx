@@ -1,11 +1,11 @@
 //aqui vem a logo, a barra de pesquisa, o botão do carrinho e o botão de login
 import { useState } from "react";
-import Cart from "../Cart"
+
+import Cart from "../Cart";
 import "./style.css";
 
 const Header = () => {
-
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
 
   return (
     <header>
@@ -14,28 +14,24 @@ const Header = () => {
           <h3>kenzieShop</h3>
         </div>
 
-        <div className="cartBox">
-        {toggle ? (
-              <div className="toggleBox">
-                <button className="showCart" onClick={() => setToggle(false)}>
-                  ...
-                </button>
-                <Cart/>
-              </div>
-            ) : (
-              <div>
-                <button className="showCart" onClick={() => setToggle(true)}>
+        <div className="cartButton">
+          {toggle ? (
+            <div className="cartBox">
+              <button className="showCart" onClick={() => setToggle(false)}>
+                close cart
+              </button>
+              <Cart />
+            </div>
+          ) : (
+            <div>
+              <button className="showCart" onClick={() => setToggle(true)}>
                 cart
-                </button>
-              </div>
-            )}
-          <button>Login</button>
+              </button>
+            </div>
+          )}
+          <button className="buttonLogin">Login</button>
         </div>
       </nav>
-      <form>
-        <input type="text" placeholder="pesquisa por nome" />
-        <button>Go</button>
-      </form>
     </header>
   );
 };

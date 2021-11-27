@@ -1,8 +1,0 @@
-.showCaseContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 850px;
-  margin: 0 10px;
-  gap: 5px;
-}
