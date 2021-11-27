@@ -1,0 +1,9 @@
+.mainContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+aside{
+    flex-grow: 2;
+}
