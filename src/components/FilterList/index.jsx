@@ -4,7 +4,10 @@ import "./style.css";
 
 const FilterList = () => {
   const dispatch = useDispatch();
-  //corrigir desmarcação da checkbox
+
+  const handleClick = (category, event) => {
+    dispatch(filterCheckbox(category, event));
+  };
 
   return (
     <aside>
@@ -14,7 +17,8 @@ const FilterList = () => {
           <input
             type="checkbox"
             name="cats"
-            onClick={() => dispatch(filterCheckbox("cats"))}
+            /* onClick={() => dispatch(filterCheckbox("cats"))} */
+            onClick={(event) => handleClick("cats", event)}
           />
           <label for="cats">Cats</label>
         </div>
@@ -22,7 +26,7 @@ const FilterList = () => {
           <input
             type="checkbox"
             name="dogs"
-            onClick={() => dispatch(filterCheckbox("dogs"))}
+            onClick={(event) => handleClick("dogs", event)}
           />
           <label for="dogs">Dogs</label>
         </div>
@@ -30,7 +34,7 @@ const FilterList = () => {
           <input
             type="checkbox"
             name="fishes"
-            onClick={() => dispatch(filterCheckbox("fishes"))}
+            onClick={(event) => handleClick("fishes", event)}
           />
           <label for="fishes">Fishes</label>
         </div>
@@ -38,7 +42,7 @@ const FilterList = () => {
           <input
             type="checkbox"
             name="rodents"
-            onClick={() => dispatch(filterCheckbox("rodents"))}
+            onClick={(event) => handleClick("rodent", event)}
           />
           <label for="rodents">Rodents</label>
         </div>

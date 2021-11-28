@@ -28,11 +28,10 @@ const productsReducer = (state = initialState, action) => {
         return currProduct.includes(action.input);
       });
 
-      if (action.input) {
+      if (action.event.target.checked) {
         return filtered;
       } else {
-        state = initialState;
-        return state;
+        return productsInfo;
       }
 
     default:

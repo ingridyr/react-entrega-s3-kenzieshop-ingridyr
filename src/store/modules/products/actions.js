@@ -10,7 +10,8 @@ export const filterProducts = (input) => ({
   input,
 });
 
-export const filterCheckbox = (input) => ({
+export const filterCheckbox = (input, event) => ({
   type: FILTER_CHECKBOX,
   input,
+  event,
 });

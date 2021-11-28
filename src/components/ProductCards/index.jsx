@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { addToCartThunk, removeFromCartThunk } from "../../store/modules/cart/thunks";
+import { toast } from "react-toastify"
 
 import "./style.css";
 
@@ -7,6 +8,11 @@ const ProductCards = ({ product, removeItem = false, index }) => {
   const { id, name, image, price } = product;
 
   const dispatch = useDispatch();
+
+  const handleClick = (product) => {
+    dispatch(addToCartThunk(product))
+    toast("Sucess!")
+  }
 
   return (
     <div key={id} className="cardBox">
@@ -31,7 +37,7 @@ const ProductCards = ({ product, removeItem = false, index }) => {
         <>
           <button
             className="buttonAdd"
-            onClick={() => dispatch(addToCartThunk(product))}
+            onClick={() => handleClick(product)}
           >
             Add to cart
           </button>
