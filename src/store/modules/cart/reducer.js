@@ -1,15 +1,15 @@
 import { ADD_TO_CART, REMOVE_FROM_CART } from "./actionTypes";
+const cartState = JSON.parse(localStorage.getItem("@cart")) || [];
 
-const cartReducer = (state = [], action) => {
+const cartReducer = (state = cartState, action) => {
   switch (action.type) {
     case ADD_TO_CART:
       const { product } = action;
-      return [...state, product];
+      return product;
 
     case REMOVE_FROM_CART:
       const { index } = action;
-      const newList = state.filter((_, currIndex) => currIndex !== index);
-      return newList;
+      return index;
 
     default:
       return state;

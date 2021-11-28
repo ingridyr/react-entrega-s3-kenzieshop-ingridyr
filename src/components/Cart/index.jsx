@@ -17,8 +17,8 @@ const Cart = () => {
       {cart.length > 0 ? (
         <>
           {cart.map((item, index) => (
-            <div className="cartItems">
-              <ProductCards key={index} product={item} removeItem index={index}/>
+            <div className="cartItems" key={index}>
+              <ProductCards product={item} removeItem index={index}/>
             </div>
           ))}
           <div>
