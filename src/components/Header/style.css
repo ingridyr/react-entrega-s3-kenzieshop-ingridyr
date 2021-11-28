@@ -69,6 +69,7 @@ input {
 h3 {
   display: flex;
   color: white;
+  cursor: pointer;
 }
 
 .showCart {

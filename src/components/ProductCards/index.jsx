@@ -20,8 +20,8 @@ const ProductCards = ({ product, removeItem = false, index }) => {
       {removeItem ? (
         <button className="buttonRemove" onClick={() => dispatch(removeFromCart(index))}>X</button>
       ) : (
-        <button onClick={() => dispatch(addToCart(product))}>
-          add to cart
+        <button className="buttonAdd"onClick={() => dispatch(addToCart(product))}>
+          Add to cart
         </button>
       )}
     </div>

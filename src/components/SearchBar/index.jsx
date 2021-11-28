@@ -28,12 +28,15 @@ const SearchBar = () => {
           Go
         </button>
       </div>
+      <p className="message">Find the perfect product for your pet here!</p>
+
       {toggleFilter ? (
         <div className="toggleBoxFilterList">
           <BsFilterSquareFill
             size={30}
             onClick={() => setToggleFilter(false)}
             color="blueviolet"
+            title="filter button"
           />
 
           <FilterList />
@@ -44,6 +47,7 @@ const SearchBar = () => {
             size={30}
             onClick={() => setToggleFilter(true)}
             color="blueviolet"
+            title="filter button"
           />
         </div>
       )}

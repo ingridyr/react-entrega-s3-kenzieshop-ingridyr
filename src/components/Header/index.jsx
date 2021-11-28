@@ -13,7 +13,7 @@ const Header = () => {
     <header>
       <nav>
         <div className="logo">
-          <h3><FaPaw color="white"/> KenzieShop</h3>
+          <h3><FaPaw color="white" title="cart button"/> KenzieShop</h3>
         </div>
 
         <div className="cartButton">

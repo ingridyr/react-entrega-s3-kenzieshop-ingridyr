@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  align-items: center;
   margin: 10px 20px;
 }
 
@@ -20,8 +21,8 @@
 }
 
 .searchBarContainer input::placeholder {
-    color: #d68e62f1;
-  }
+  color: #d68e62f1;
+}
 
 .searchBarContainer button {
   padding: 7px;
@@ -36,4 +37,24 @@
   border-radius: 0 5px 5px 0;
   color: white;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.searchBarContainer button:active {
+  background: white;
+  color: blueviolet;
+  border: 2px solid blueviolet;
+  padding: 5px;
+}
+
+.message {
+  display: none;
+  color: rgb(97, 11, 179);
+  font-size: 16px;
+}
+
+@media (min-width: 700px) {
+  .message {
+    display: inline;
+  }
 }

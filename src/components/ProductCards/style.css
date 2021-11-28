@@ -52,3 +52,17 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+.buttonAdd {
+  border: 1px solid #ef6915a9;
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 5px 20px;
+  color: #ef6915;
+  cursor: pointer;
+}
+
+.buttonAdd:active {
+  background-color: #f0ac83;
+  color: white;
+}
