@@ -1,20 +1,11 @@
-import ProductList from "./components/ProductList";
-import Header from "./components/Header";
-import SearchBar from "./components/SearchBar";
 import React from "react";
+import Route from "./routes";
+import "react-toastify/dist/ReactToastify.css";
 
 import "./App.css";
 
 function App() {
-  return (
-    <>
-      <Header />
-      <SearchBar />
-      <div className="mainContainer">
-        <ProductList />
-      </div>
-    </>
-  );
+  return <Route />;
 }
 
 export default App;

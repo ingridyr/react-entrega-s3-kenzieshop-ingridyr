@@ -1,0 +1,36 @@
+.loginContainer {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    190deg,
+    rgba(131, 58, 180, 1) 33%,
+    rgba(214, 86, 7, 1) 78%,
+    rgba(253, 115, 29, 1) 97%
+  );
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginContainer p {
+  margin: 20px;
+  font-size: 30px;
+}
+
+.loginContainer button {
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.452);
+  padding: 10px;
+  color: #ab4860;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.loginContainer button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
