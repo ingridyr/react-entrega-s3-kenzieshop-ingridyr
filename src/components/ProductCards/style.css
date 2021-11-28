@@ -3,12 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid rgb(190, 188, 188);
+  border: 2px solid rgb(203, 177, 228);
   border-radius: 5px;
   margin: 5px;
   width: 190px;
   height: 300px;
   box-sizing: border-box;
+  color: rgb(67, 18, 114);
 }
 
 img {
@@ -36,4 +37,18 @@ p {
 
 .qtd {
   display: none;
+}
+
+.buttonRemove {
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #ef6915a9;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

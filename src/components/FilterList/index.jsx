@@ -9,7 +9,7 @@ const FilterList = () => {
   return (
     <aside>
       <ul>
-        <p>Search by Filter:</p>
+        <h5>Search by Filter:</h5>
         <div>
           <input
             type="checkbox"

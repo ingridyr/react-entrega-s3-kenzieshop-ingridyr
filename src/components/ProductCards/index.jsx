@@ -14,11 +14,11 @@ const ProductCards = ({ product, removeItem = false, index }) => {
       <img src={image} alt={`img${id}`} />
       <div>
         <p className="title">{name}</p>
-        <p className="price">R$ {price}</p>
+        <p className="price">{price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' }).replace(".", ",")}</p>
         {/* <p className="qtd">qtd</p> tentar implementar quantidade*/}
       </div>
       {removeItem ? (
-        <button onClick={() => dispatch(removeFromCart(index))}>X</button>
+        <button className="buttonRemove" onClick={() => dispatch(removeFromCart(index))}>X</button>
       ) : (
         <button onClick={() => dispatch(addToCart(product))}>
           add to cart

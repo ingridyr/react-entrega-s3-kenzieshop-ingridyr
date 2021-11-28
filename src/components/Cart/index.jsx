@@ -8,6 +8,10 @@ import "./style.css";
 const Cart = () => {
   const cart = useSelector((store) => store.cart);
 
+  const totalPrice = cart.reduce((acc, item) => {
+    return acc + item.price;
+  }, 0)
+
   return (
     <div className="cartContainer">
       {cart.length > 0 ? (
@@ -18,18 +22,15 @@ const Cart = () => {
             </div>
           ))}
           <div>
-            <p>
-              Total: R$
-              {cart.reduce((acc, item) => {
-                return acc + item.price;
-              }, 0)}
+            <p className="totalPrice">
+              Total Purchase: {totalPrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}
             </p>
           </div>
         </>
       ) : (
         <div>
-          <p>Your cart is empty</p>
-          <p>Add items</p>
+          <p className="warning1">Your cart is empty</p>
+          <p className="warning2">Add items</p>
         </div>
       )}
     </div>

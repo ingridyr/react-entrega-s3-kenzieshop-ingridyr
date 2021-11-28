@@ -10,7 +10,7 @@
 .cartItems .cardBox {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 120px;
   width: 100%;
   padding: 10px;
@@ -21,10 +21,35 @@
   width: 100px;
 }
 
+.cartItems .title {
+  font-size: 12px;
+  text-align: left;
+}
+
 .cartItems .qtd {
   display: none;
 }
 
-.cartItems .price{
+.cartItems .price {
   display: inline;
+}
+
+.totalPrice {
+  background-color: rgb(219, 196, 240);
+  padding: 15px;
+  border-radius: 5px;
+  color: rgb(67, 18, 114);
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.warning1 {
+  color: rgb(67, 18, 114);
+  font-weight: 600;
+}
+
+.warning2 {
+  background-color: rgba(219, 196, 240, 0.349);
+  color: rgb(67, 18, 114);
+  padding: 10px;
 }

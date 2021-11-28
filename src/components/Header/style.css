@@ -1,6 +1,13 @@
 header {
   display: flex;
   justify-content: space-around;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    190deg,
+    rgba(131, 58, 180, 1) 33%,
+    rgba(214, 86, 7, 1) 78%,
+    rgba(253, 115, 29, 1) 97%
+  );
 }
 
 form {
@@ -15,12 +22,12 @@ nav {
   align-items: center;
   margin: 0 20px;
   height: 40px;
+  gap: 30px;
 }
 
 .cartButton {
   display: flex;
   align-items: center;
-  gap: 30px;
 }
 
 input {
@@ -29,18 +36,20 @@ input {
 }
 
 .buttonLogin {
-  width: 80px;
+  width: 70px;
   border-radius: 5px;
   padding: 5px;
-  border: none;
+  border: 2px outset rgba(255, 255, 255, 0.329);
   margin: 10px;
-  background-color: blueviolet;
+  background-color: rgba(255, 255, 255, 0.329);
   color: white;
+  cursor: pointer;
 }
 
 .logo {
   display: flex;
   flex-grow: 1;
+  margin: 0 10px;
 }
 
 .cartBox {
@@ -50,9 +59,24 @@ input {
   align-items: stretch;
   justify-content: center;
   background-color: white;
-  border: 2px solid black;
+  border: 2px solid rgb(203, 177, 228);
   border-radius: 5px;
   padding: 5px;
-  width: 350px;
-  transform: translate(-70%, 50%);
+  width: 274px;
+  transform: translate(-63%, 50%);
+}
+
+h3 {
+  display: flex;
+  color: white;
+}
+
+.showCart {
+  cursor: pointer;
+  background-color: #ef6915;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  font-size: 16px;
 }

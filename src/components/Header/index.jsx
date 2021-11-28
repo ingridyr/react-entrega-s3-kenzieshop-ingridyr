@@ -1,5 +1,7 @@
 //aqui vem a logo, a barra de pesquisa, o botão do carrinho e o botão de login
 import { useState } from "react";
+import { IoCartOutline } from "react-icons/io5";
+import { FaPaw } from "react-icons/fa";
 
 import Cart from "../Cart";
 import "./style.css";
@@ -11,22 +13,24 @@ const Header = () => {
     <header>
       <nav>
         <div className="logo">
-          <h3>kenzieShop</h3>
+          <h3><FaPaw color="white"/> KenzieShop</h3>
         </div>
 
         <div className="cartButton">
           {toggle ? (
             <div className="cartBox">
               <button className="showCart" onClick={() => setToggle(false)}>
-                close cart
+                Cart
               </button>
               <Cart />
             </div>
           ) : (
             <div>
-              <button className="showCart" onClick={() => setToggle(true)}>
-                cart
-              </button>
+              <IoCartOutline
+                onClick={() => setToggle(true)}
+                size={30}
+                color="white"
+              />
             </div>
           )}
           <button className="buttonLogin">Login</button>
