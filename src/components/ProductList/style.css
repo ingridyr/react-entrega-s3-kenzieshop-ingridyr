@@ -25,6 +25,7 @@ section {
   section {
     flex-wrap: wrap;
     justify-content: center;
+    overflow: hidden;
     max-width: 900px;
   }
 }
