@@ -12,7 +12,7 @@ ul {
   background-color: white;
   list-style: none;
   padding: 10px;
-  color: #EF6915;
+  color: #ef6915;
 }
 
 ul input {
@@ -27,6 +27,8 @@ ul input {
 
 ul input:checked {
   background-color: blueviolet;
+  background: url("/src/assets/img/checkmark1.jpg");
+  background-size: cover;
   width: 15px;
   height: 15px;
   color: white;
@@ -38,5 +40,5 @@ label {
 }
 
 h5 {
-  margin: 5px 0 10px 0 ;
+  margin: 5px 0 10px 0;
 }
